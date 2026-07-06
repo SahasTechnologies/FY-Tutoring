@@ -25,7 +25,7 @@ html {
 
 body {
     font-family: var(--fb);
-    background: #F1F3F7;
+    background: #e9effd;
     color: var(--text);
     overflow-x: hidden;
     line-height: 1.65;
