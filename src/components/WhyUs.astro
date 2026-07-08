@@ -1,0 +1,50 @@
+---
+import '../styles/why-us.css';
+import Hl from './Hl.astro';
+
+const reasons = [
+    {
+        num: "1",
+        title: "Experienced tutors",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        num: "2",
+        title: "Personalised plans",
+        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        num: "3",
+        title: "Proven results",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        num: "4",
+        title: "Flexible scheduling",
+        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    }
+];
+---
+<div class="why-container">
+    <section class="why-section" id="why-us">
+        <div class="why-header-wrap">
+            <div class="why-left-header">
+                <h2 class="why-h2">Why <Hl>Us</Hl></h2>
+                <p class="why-sub">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, here's why families choose us.
+                </p>
+            </div>
+        </div>
+        <div class="why-grid">
+            {reasons.map((reason) => (
+                <div class="why-card">
+                    <div class="why-num">{reason.num}</div>
+                    <div class="why-text">
+                        <h3 class="why-card-h3">{reason.title}</h3>
+                        <p class="why-card-p">{reason.text}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
+</div>
