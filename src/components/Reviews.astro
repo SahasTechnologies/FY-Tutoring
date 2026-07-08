@@ -1,0 +1,68 @@
+---
+import reviews from '../data/reviews.json';
+import '../styles/reviews.css';
+import Hl from './Hl.astro';
+
+const col1 = reviews.filter((_, i) => i % 2 === 0); //even
+const col2 = reviews.filter((_, i) => i % 2 !== 0); //odd
+---
+
+<div class="reviews-container">
+    <section class="reviews-section" id="reviews">
+        <div class="reviews-inner">
+            <div class="reviews-header-wrap">
+                <div class="reviews-left-header">
+                    <h2 class="reviews-h2">What <Hl>parents</Hl> say</h2>
+                    <p class="reviews-sub">
+                        Real results from real families across Sydney.
+                    </p>
+                </div>
+            </div>
+
+            <div class="reviews-columns">
+                
+                <div class="reviews-col"> <!-- col1 scroll up -->
+                    <div class="reviews-col-track">
+                        {[...col1, ...col1].map((review) => (
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    {Array.from({ length: review.rating }).map(() => (
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    ))}
+                                </div>
+                                <p class="review-text">"{review.text}"</p>
+                                <div class="review-author">
+                                    <span class="review-name">{review.name}</span>
+                                    <span class="review-subject">{review.subject}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                <div class="reviews-col"> <!-- col2 scroll down -->
+                    <div class="reviews-col-track">
+                        {[...col2, ...col2].map((review) => (
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    {Array.from({ length: review.rating }).map(() => (
+                                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    ))}
+                                </div>
+                                <p class="review-text">"{review.text}"</p>
+                                <div class="review-author">
+                                    <span class="review-name">{review.name}</span>
+                                    <span class="review-subject">{review.subject}</span>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

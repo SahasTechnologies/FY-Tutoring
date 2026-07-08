@@ -1,3 +1,8 @@
+@import '@fontsource/radio-canada-big/400.css';
+@import '@fontsource/radio-canada-big/500.css';
+@import '@fontsource/radio-canada-big/600.css';
+@import '@fontsource/radio-canada-big/700.css';
+
 
 :root {
     --navy: #0C1A38;
@@ -9,8 +14,8 @@
     --text: #0C1222;
     --text2: #374151;
     --text3: #6B7280;
-    --fh: 'Space Grotesk', sans-serif;
-    --fb: 'Inter', sans-serif;
+    --fh: 'Radio Canada Big', sans-serif;
+    --fb: 'Radio Canada Big', sans-serif;
 }
 
 *, *::before, *::after {

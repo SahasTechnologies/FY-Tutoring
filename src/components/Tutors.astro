@@ -1,13 +1,14 @@
 ---
 import tutors from '../data/tutors.json';
 import '../styles/tutors.css';
+import Hl from './Hl.astro';
 ---
 <div class="tutors-container">
     <section class="tutors-section" id="tutors">
         <div class="tutors-header-wrap">
 
             <div class="tutors-left-header">
-                <h2 class="tutors-h2">Meet Our Tutors</h2>
+                <h2 class="tutors-h2">Meet Our <Hl>Tutors</Hl></h2>
                 <p class="tutors-sub">
                     High-achieving mentors dedicated to helping you excel in your studies.
                 </p>
@@ -29,7 +30,7 @@ import '../styles/tutors.css';
 
         <div class="tutors-slider-container">
             <ul class="tutors-track" id="tutors-track">
-                {tutors.map((tutor) => ( 
+                {tutors.map((tutor) => (
                     <li class="tutors-slide">
                         <div class="col-teacher">
                             <div class="tile-teacher shadow-hover" data-id={tutor.id}>
@@ -38,10 +39,10 @@ import '../styles/tutors.css';
                                     <div class="qualifications">{tutor.qualifications}</div>
                                 </div>
                                 <div class="image">
-                                    <img 
-                                        src={tutor.image} 
-                                        alt={`Portrait of ${tutor.name}`} 
-                                        loading="lazy" 
+                                    <img
+                                        src={tutor.image}
+                                        alt={`Portrait of ${tutor.name}`}
+                                        loading="lazy"
                                         width="400" height="533"/>
                                 </div>
                             </div>

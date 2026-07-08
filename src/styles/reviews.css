@@ -1,0 +1,184 @@
+.reviews-container {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.reviews-section {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 64px 90px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.reviews-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.reviews-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 64px;
+    gap: 32px;
+}
+
+.reviews-left-header { max-width: 680px; }
+
+.reviews-h2 {
+    font-family: var(--fh);
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin-bottom: 16px;
+}
+
+.reviews-sub {
+    font-family: var(--fb);
+    font-size: 1.05rem;
+    color: var(--text2);
+    line-height: 1.6;
+}
+
+.reviews-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: 600px;
+    overflow: hidden;
+    /* fade out the top and bottom part
+       I just realised that you can do on multiple lines
+       wow so good */
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 88%,
+        transparent 100%
+    );
+}
+
+.reviews-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviews-col-track {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: scroll-up 28s linear infinite;
+}
+
+.reviews-col:nth-child(2) .reviews-col-track {
+    animation: scroll-down 32s linear infinite;
+}
+
+@keyframes scroll-up   { 
+    0%    { transform: translateY(0);    }
+    100%  { transform: translateY(-50%); }
+}
+@keyframes scroll-down {
+    0%    { transform: translateY(-50%); }
+    100%  { transform: translateY(0);    }
+}
+/*sorry my ocd kicked in specifically for this section */
+
+.reviews-columns:hover .reviews-col-track {
+    animation-play-state: paused;
+}
+
+.review-card {
+    background: var(--white);
+    border: 1.5px solid var(--navy2);
+    border-radius: 16px;
+    padding: 28px 28px 24px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.review-card:hover {
+    background: var(--white);
+    border-color: var(--blue);
+}
+
+.review-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 14px;
+}
+
+.review-stars svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--orange);
+    color: var(--orange);
+}
+
+.review-text {
+    font-family: var(--text);
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.review-name {
+    font-family: var(--fh);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+.review-subject {
+    font-family: var(--fb);
+    font-size: 0.78rem;
+    color: var(--text2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight:500;
+}
+
+@media (max-width: 768px) {
+    .reviews-section {
+        padding: 60px 24px 70px;
+        border-radius: 16px;
+    }
+    .reviews-header-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap:12px;
+        margin-bottom: 40px;
+    }
+    .reviews-columns {
+        grid-template-columns: 1fr;
+        height: 480px;
+    }
+    .reviews-col:nth-child(2) {
+        display: none;
+    }
+}
+
+

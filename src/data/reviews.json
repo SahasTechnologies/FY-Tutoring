@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "name": "Sarah M.",
+    "rating": 5,
+    "text": "FY Tutoring has been absolutely incredible for my daughter. Her confidence in maths has skyrocketed and she jumped two bands in her last assessment.",
+    "subject": "Year 5 Maths OC Prep"
+  },
+  {
+    "id": "2",
+    "name": "James L.",
+    "rating": 5,
+    "text": "Our son got into his selective school of choice after just one term with FY Tutoring. The tutors are passionate and genuinely care about results.",
+    "subject": "Selective School Prep"
+  },
+  {
+    "id": "3",
+    "name": "Priya K.",
+    "rating": 5,
+    "text": "Brilliant experience from start to finish. The lessons are well-structured and the tutors explain concepts in a way that actually sticks. Highly recommended!",
+    "subject": "Year 4 English OC Prep"
+  },
+  {
+    "id": "4",
+    "name": "Michael T.",
+    "rating": 5,
+    "text": "FY Tutoring's approach is completely different from other tutoring centres. Very personalised, very effective. My son loves going every week.",
+    "subject": "Year 6 Selective Prep"
+  },
+  {
+    "id": "5",
+    "name": "Angela W.",
+    "rating": 5,
+    "text": "My twins both attend FY Tutoring and the improvement has been night and day. The tutors are warm, encouraging and clearly know the OC/Selective curriculum inside out.",
+    "subject": "Year 5 OC Prep"
+  },
+  {
+    "id": "6",
+    "name": "David C.",
+    "rating": 5,
+    "text": "Incredible results. My daughter went from average marks to consistently scoring in the top percentile. The tutors are world class for what they charge.",
+    "subject": "Year 6 Maths & English"
+  },
+  {
+    "id": "7",
+    "name": "Tina R.",
+    "rating": 5,
+    "text": "I was sceptical about tutoring at first but FY Tutoring changed my mind completely. Very professional, very passionate, and the results speak for themselves.",
+    "subject": "Year 4 Maths OC Prep"
+  },
+  {
+    "id": "8",
+    "name": "Kevin H.",
+    "rating": 5,
+    "text": "My son is now at James Ruse after working with FY Tutoring. Worth every cent. The tutors are high achievers themselves and that energy rubs off on students.",
+    "subject": "Selective School Prep"
+  },
+  {
+    "id": "9",
+    "name": "Lisa F.",
+    "rating": 5,
+    "text": "Absolutely love the personalised attention. The tutors took the time to understand exactly where my daughter was struggling and built a targeted plan around that.",
+    "subject": "Year 5 English OC Prep"
+  },
+  {
+    "id": "10",
+    "name": "Omar A.",
+    "rating": 5,
+    "text": "FY Tutoring is the real deal. The tutors are relatable, smart, and incredibly effective. My son's reading and comprehension have improved enormously.",
+    "subject": "Year 4 English"
+  }
+]
