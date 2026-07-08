@@ -4,7 +4,7 @@
 
 .hero {
     min-height: calc(100svh - 48px);
-    background: #92b1f5;
+    background: #c9d9ff;
     position: relative;
     overflow: hidden;
     display: flex;

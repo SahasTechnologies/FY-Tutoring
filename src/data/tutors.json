@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "name": "Ms Shalini Vijeyakumar",
+    "qualifications": "BSc MDc",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Mr Lachlan Reardon",
+    "qualifications": "BA(Hons) PhDc",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Mr Ricky Purani",
+    "qualifications": "BEng(Elec)",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Dr Thomas Dixon",
+    "qualifications": "BAeroEng (Hons I) PhD",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Mr Aydin Kilic",
+    "qualifications": "BMechatronicsEng (Hons I)",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Ms Abarnika Sivasamy",
+    "qualifications": "BEng(Hons) MBiomedEng",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "7",
+    "name": "Mr Steven Liu",
+    "qualifications": "BActSt BCom",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  },
+  {
+    "id": "8",
+    "name": "Ms Rachel Zhang",
+    "qualifications": "BCommerce",
+    "image": "https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+  }
+]

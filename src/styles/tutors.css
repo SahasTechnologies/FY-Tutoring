@@ -1,0 +1,221 @@
+.tutors-container {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.tutors-section {
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    padding: 80px 64px 90px;
+    border-radius: 24px;
+    border:1px solid rgba(12,26,56, 0.08);
+    box-shadow: 0 8px 32px rgba(12,26,56, 0.03);
+}
+
+.tutors-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 32px;
+}
+
+.tutors-left-header { max-width: 680px; }
+
+.tutors-h2 {
+    font-family: var(--fh);
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.tutors-sub {
+    font-family: var(--fb);
+    font-size: 1.05rem;
+    color: var(--text2);
+    line-height: 1.6;
+}
+
+.tutors-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px; /* slightly above the bottom of header wrap */
+}
+
+.tutors-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(12,26,56, 0.08);
+    background: var(--smoke);
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.tutors-btn:hover {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(12, 26, 56, 0.1);
+}
+
+.tutors-btn:active {
+    transform: translateY(0) scale(0.96);
+}
+
+.tutors-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    transition: transform 0.2s ease;
+}
+
+.tutors-btn.prev:hover svg { transform: translateX(-2px); }
+.tutors-btn.next:hover svg { transform: translateX(2px);  }
+
+/* Carousel section */
+.tutors-slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.tutors-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 8px 4px 24px;
+    margin: -8px -4px -24px; /* Dont remove, this prevents clipping shadows */
+    scrollbar-width: none; /* for the 5 ppl who use Firefox (well, I use zen, can't be talking */
+    -ms-overflow-style: none; /* atp why not... please get help if you are using IE still */
+}
+
+.tutors-track::-webkit-scrollbar {
+    display: none; /* for the google data donators (chrome) */
+}
+
+.tutors-slide {
+    flex: 0 0 calc(25% - 18px);
+    scroll-snap-align: start;
+    list-style: none;
+}
+
+/* Card things */
+.col-teacher {
+    height: 100%;
+    width: 100%;
+}
+
+.tile-teacher {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid rgba(12,26,56, 0.08);
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 4px 18px rgba(12, 26, 56, 0.015);
+}
+
+.tile-teacher .text {
+    padding: 24px 24px 16px;
+    z-index: 2;
+    position: relative;
+}
+
+.tile-teacher .heading.h2 {
+    font-family: var(--fh);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.tile-teacher .qualifications {
+    font-family: var(--fb);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text3);
+    text-transform: uppercase; /* idk if I should remove; (TODO) if needed*/
+    letter-spacing: 0.04em;
+}
+
+.tile-teacher .image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #e9effd; /* Its the body bg colour under the transparent cutout images */
+    border-top: 1px solid rgba(12, 26, 56, 0.03);
+}
+
+.tile-teacher .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* hover things */
+.tile-teacher.shadow-hover:hover { /* wow thats a long name */
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(12, 26, 56, 0.09);
+    border-color: rgba(37, 99, 235,0.15 );
+}
+
+.tile-teacher.shadow-hover:hover .image img {transform: scale(1.04);}
+
+/* responsivity things */
+/* is responsivity even a word? */
+@media (max-width: 1024px) {
+    .tutors-slide {
+        flex: 0 0 calc(33.333% - 16px);
+    }
+}
+
+@media (max-width: 768px) {
+    .tutors-section {
+        padding: 60px 24px 70px;
+        border-radius: 16px;
+    }
+
+    .tutors-header-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 36px;
+    }
+    .tutors-nav {
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 0;
+    }
+
+    .tutors-slide { flex: 0 0 calc(50% - 12px); }
+    .tile-teacher { height: 380px; }
+    .tile-teacher .image {height: 250px; }
+}
+
+@media (max-width: 480px) {
+    .tutors-slide { flex: 0 0 calc(82% - 10px); }
+    .tutors-nav { display: none; } /* no nav arrows on mobile, they have fingers */
+}
